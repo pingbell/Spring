@@ -25,9 +25,19 @@ public class DefaultControllerClass {
 	@Autowired QuestionaireService service;
 	@RequestMapping("/index")
 	public String index(Model model) {
-	
 		return "index";
 	}
+	
+	@RequestMapping("/index2")
+	public String index2() {
+	    return "index2"; //defect-details.html page name to open it
+	}
+	
+	@RequestMapping("/index4")
+	public String index4() {
+	    return "index4"; //defect-details.html page name to open it
+	}
+	
 	
 	@RequestMapping("getAll")
 	public String getAll(Model model) {
